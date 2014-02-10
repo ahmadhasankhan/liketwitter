@@ -1,0 +1,13 @@
+<% for name in [:alert, :notice, :error] %>
+    <% if flash[name] %>
+        <% if name == :notice %>
+            <div class="notice"><span class="img_span"><img src="/images/notification.png" alt="Success"></span>
+                <span class="text_span"> <%= flash[name] %></span>
+            </div>
+        <% else %>
+            <div class="alert"><span class="img_span"><img src="/images/alert.png" alt="Alert" height="30px"></span>
+                <span class="text_span"> <%= flash[name] %></span></div>
+
+        <% end %>
+    <% end %>
+<% end %>

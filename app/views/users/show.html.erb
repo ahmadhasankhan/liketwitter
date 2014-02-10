@@ -1,0 +1,37 @@
+<div class="container_top">
+    <div class="container_top_right">
+        <div class="container_top_title"></div>
+        <div class="inner_container">
+            <table width="100%" cellpadding="3" cellspacing="2">
+                <tr>
+                    <td width="30%">Username:</td>
+                    <td><%= @user.username %></td>
+                </tr>
+
+                <tr>
+                    <td>mail:</td>
+                    <td><%= @user.email %></td>
+                </tr>
+
+                <tr>
+                    <td>Crypted password:</td>
+                    <td><%= @user.crypted_password %></td>
+                </tr>
+
+                <tr>
+                    <td>Password salt:</td>
+                    <td> <%= @user.password_salt %></td>
+                </tr>
+
+                <tr>
+                    <td>Persistence token:</td>
+                    <td><%= @user.persistence_token %></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><%= link_to 'Edit', edit_user_path(@user), :class => 'link_button' %> <%= link_to 'Back', users_path, :class => 'link_button' %></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

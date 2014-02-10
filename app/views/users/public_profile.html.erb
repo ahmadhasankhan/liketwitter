@@ -1,0 +1,42 @@
+<div class="container_top">
+    <div class="container_top_right">
+        <div class="container_top_title"><%= @user.username %></div>
+        <div class="inner_container">
+            <div class="left_container">
+                <div><img src="/images/profile-pic-dummy.jpg"></div>
+                <div style="font-weight: bolder">
+                    <table>
+                        <tr>
+                            <td><%= link_to @followers.length, tweets_path %></td>
+                            <td><%= link_to @following.length, followers_url %></td>
+                            <td><%= link_to @tweets.length, tweets_path %></td>
+                        </tr>
+                        <tr>
+                            <td><%= link_to "Followers", tweets_path %></td>
+                            <td><%= link_to "Following", followers_url %></td>
+                            <td><%= link_to "Tweets", tweets_path %></td>
+                        </tr>
+                        <% if @user != current_user %>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <% if !@am_i_following.blank? %>
+                                        <%= link_to 'Unfollow', follow_users_path(:user_id => @user.id) %>
+                                    <% else %>
+                                        <%= link_to 'Follow', follow_users_path(:user_id => @user.id) %>
+                                    <% end %>
+                                </td>
+                                <td></td>
+                            </tr>
+                        <% end %>
+                    </table>
+                </div>
+            </div>
+            <div class="right_container">
+                <%= render 'common/diplayTweets' %>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,26 @@
+<% @tweets.each do |tweet| %>
+    <div class="tweet_block">
+        <div class="tweetMessageContainer">
+
+            <%= link_to tweet.user.username, public_profile_path(tweet.user.username) %> |
+            Tweeted
+            at: <%= tweet.created_at.strftime("%m-%d-%Y") %></div>
+        <div class="messageBody"><%= tweet.message %></div>
+        <div>
+            <% if tweet.user != current_user && (tweet.is_private ==false || !@am_i_following.blank?) && !@retweets.include?(tweet) %>
+                <%= link_to "Retweet", reTweet_tweets_path(:tweet_id => tweet) %>
+            <% else
+                 if tweet.user != current_user && tweet.is_private %>
+                    Private
+                <% else
+                     if tweet.user == current_user %>
+                        <%= link_to "Delete", tweet, :confirm => 'Are you sure?', :method => :delete %>
+                    <% else %>
+                        <%= link_to "Retweeted", reTweet_tweets_path(:tweet_id => tweet) %>
+                    <% end %>
+                <% end %>
+            <% end %>
+            | No Comments | Options
+        </div>
+    </div>
+<% end %>

@@ -1,0 +1,26 @@
+<%= form_for(@user_session ||= UserSession.new) do |f| %>
+    <% if @user_session.errors.any? %>
+        <div class="login_msg">
+            <div class="alert_img"><img src="/images/alert.png"></div><%= @user_session.errors.full_messages.first %>
+        </div>
+    <% end %>
+    <div class="login_box">
+        <div class="field">
+            <%= f.label :username %>
+            <%= f.text_field :username, :required=>true, :class=>"inputbox_login" %>
+        </div>
+        <div class="field">
+            <%= f.label :password %>
+            <%= f.password_field :password, :required=>true, :class=>"inputbox_login" %>
+        </div>
+        <div class="submit">
+            <%= f.submit 'Login' %>
+        </div>
+        <div class="forgot">
+            <%= link_to 'Forgot password?', new_password_reset_path %>
+           </div>
+        <div class="new">
+            <%= link_to 'New User?',new_user_path %>
+        </div>
+    </div>
+<% end %>

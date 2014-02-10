@@ -1,0 +1,25 @@
+<% if current_user %>
+    <div class="container_top">
+        <div class="container_top_right">
+            <div class="container_top_title">WELCOME TO New Twitter</div>
+            <div class="inner_container">
+                <div class="left_container">
+                    <div><img src="/images/profile-pic-dummy.jpg"></div>
+                    <div><label><%= link_to "#{@followers.length}Followers", tweets_path %></label> |
+                        <label><%= link_to "#{@following.length}Following", followers_url %></label> |
+                        <label><%= link_to "#{@tweets.length}Tweets", tweets_path %></label>
+                    </div>
+                    <div><%= render 'tweets/form' %></div>
+                </div>
+                <div class="tweet_title">New Tweets</div>
+                <div class="right_container">
+
+                    <%= render 'common/diplayTweets' %>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>
+
+
+

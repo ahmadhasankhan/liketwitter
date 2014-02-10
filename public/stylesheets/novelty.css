@@ -1,0 +1,33 @@
+.notice {
+    width: 92%;
+    height: 30px;
+    color: #ffffff;
+    background-color: #add8e6;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.alert {
+    width: 92%;
+    height: 30px;
+    color: #ff0000;
+    background-color: yellow;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.text_span {
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.img_span {
+    float: left;
+}
+

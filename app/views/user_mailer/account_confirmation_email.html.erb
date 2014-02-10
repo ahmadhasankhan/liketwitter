@@ -1,0 +1,11 @@
+<p>
+    Your username is <%= @user.username %>.
+
+</p>
+
+<p>
+    Please click on the following link to confirm your account:
+
+</p>
+<% link = confirm_users_url(:token => @user.persistence_token) %>
+<%= link_to link, link %>

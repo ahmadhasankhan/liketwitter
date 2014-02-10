@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  continent: MyString
+  region: MyString
+  indep_year: MyString
+  population: MyString
+  country_code: MyString
+
+two:
+  name: MyString
+  continent: MyString
+  region: MyString
+  indep_year: MyString
+  population: MyString
+  country_code: MyString

@@ -1,0 +1,12 @@
+<div class="container_top">
+    <div class="page_title">
+        <%= raw(t 'department.index.title') %>
+    </div>
+    <div class="right_button_section">
+        <%= link_to 'New Department', new_department_path, :class => "button_new" %>
+    </div>
+</div>
+<div class="content">
+    <%= render 'page/alert' %>
+    <div class="content_body"></div>
+</div>

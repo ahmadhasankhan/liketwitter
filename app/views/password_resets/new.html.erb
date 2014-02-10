@@ -1,0 +1,28 @@
+<div class="container_top">
+    <div class="container_top_right">
+        <div class="container_top_title">Forgot Password</div>
+        <div class="inner_container">
+            <% form_tag password_resets_path do %>
+
+                <% if params[:resend] %>
+                    <%= hidden_field_tag("resend", params[:resend]) %>
+                <% end %>
+                <table width="50%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="15%" valign="middle"><label><b> E-mail:</b></label></td>
+                        <td> <%= email_field_tag "email", '', {"class" => 'inputbox_form'} %></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="reset_pwd"><%= submit_tag "Reset", :class => 'link_button' %></div>
+                            <div class="reset_pwd"><%= submit_tag "Cancel", :class => 'link_button' %></div>
+                        </td>
+                    </tr>
+                </table>
+            <% end %>
+        </div>
+
+    </div>
+</div>
+

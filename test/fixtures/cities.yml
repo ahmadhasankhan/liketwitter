@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  state_id: 1
+  name: MyString
+  population: MyString
+  description: MyText
+
+two:
+  state_id: 1
+  name: MyString
+  population: MyString
+  description: MyText

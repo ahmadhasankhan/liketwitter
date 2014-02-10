@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category_id: 1
+  name: 
+  price: 1
+  new_price: 1
+  inventory: 1
+  description: MyText
+
+two:
+  category_id: 1
+  name: 
+  price: 1
+  new_price: 1
+  inventory: 1
+  description: MyText

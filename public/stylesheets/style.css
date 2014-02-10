@@ -1,0 +1,643 @@
+body {
+    background-image: url("/images/twitter_london.jpg");
+    font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+    background: #723b3b;
+}
+
+.main_container {
+    float: left;
+    width: 100%;
+    background-color: #4D96A3;
+
+}
+
+.header {
+    float: left;
+    width: 100%;
+}
+
+.header_title {
+    float: left;
+    margin-top: 20px;
+    font-size: 25px;
+    text-shadow: aqua;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+
+}
+
+.login_box {
+    float: right;
+    width: 370px;
+    height: 100px;
+    margin-top: 0px;
+    margin-right: 0px;
+    color: white;
+
+}
+
+.logout_box {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+
+}
+
+.logout_box a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.field {
+    float: left;
+    width: 150px;
+    margin-top: 5px;
+    font-size: 12px;
+
+}
+
+.field label {
+    float: left;
+    font-weight: bold;
+}
+
+.inputbox_login {
+    width: 140px;
+    height: 20px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.inputbox_form {
+    width: 200px;
+    height: 25px;
+    border: 0px;
+    padding: 4px;
+    margin-top: 4px;
+    border-radius: 5px;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, .5) inset, 1px -1px 1px #1a1f32 inset;
+}
+
+.textbox_form {
+    height: 110px;
+    width: 300px;
+    resize: none;
+    border: 0px;
+    padding: 4px;
+    margin-top: 4px;
+    border-radius: 5px;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, .5) inset, 1px -1px 1px #1a1f32 inset;
+}
+
+.submit input {
+    float: right;
+    margin-right: 20px;
+    color: #ffffff;
+    width: 50px;
+    height: 22px;
+    font-weight: bold;
+    background: #3fa2c3;
+    margin-top: 18px;
+    border-radius: 5px;
+    border: 0px;
+
+}
+
+.forgot {
+    float: left;
+
+}
+
+.new {
+    float: left;
+    margin-left: 20px;
+}
+
+.forgot a {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.new a {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.login_msg {
+    float: left;
+    width: 293px;
+    font-size: 9px;
+    color: #ff0000;
+    background-color: yellow;
+    border: 1px solid #ff0000;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.alert_img img {
+    float: left;
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 3px;
+
+}
+
+.menu_bar {
+    float: left;
+    width: 100%;
+    height: 48px;
+    background: #3FA2C3;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.menu_button {
+    float: left;
+    background: #3fa2c3;
+    width: 990px;
+    height: 48px;
+
+}
+
+.menu_button ul {
+    margin: 0px;
+    padding: 0px;
+    height: 48px;
+    list-style: none;
+    display: inline;
+}
+
+.menu_button ul li {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    vertical-align: middle;
+    font-size: 12px;
+
+}
+
+.menu_button ul li a {
+
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 23px;
+    padding-right: 21px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+}
+
+.menu_button ul li a:hover {
+    background-color: #3eadb4;
+    height: 48px;
+    line-height: 48px;
+    color: white;
+}
+
+.menu_button ul li.gap {
+    float: left;
+    height: 48px;
+    background: #3e4124;
+}
+
+.banner {
+    float: left;
+    width: 965px;
+    height: 300px;
+    background: #50574b;
+    margin-left: 12px;
+    margin-top: 7px;
+    border: 7px solid #18171d;
+}
+
+.container {
+    width: 100%;
+    float: left;
+
+}
+
+.container_main {
+    width: 100%;
+    float: left;
+
+}
+
+.container_top {
+    float: left;
+    width: 977px;
+    min-height: 325px;
+    margin-top: 7px;
+    margin-left: 12px;
+
+}
+
+.container_top_left {
+    float: left;
+    width: 241px;
+    height: 325px;
+
+}
+
+.container_left_box {
+
+    width: 240px;
+    height: 232px;
+    background: #6d7b57;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+
+}
+
+.left_box_title {
+    float: left;
+    width: 100%;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.container_top_right {
+    float: right;
+    width: 100%;
+    min-height: 325px;
+    background: #f5f5f7;
+    border-radius: 10px;
+}
+
+.container_top_title {
+    float: left;
+    margin-bottom: 8px;
+    margin-left: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #3596D8;
+    color: white;
+    height: 27px;
+    line-height: 26px;
+    margin-left: 14px;
+    margin-top: 8px;
+    width: 945px;
+    padding-left: 5px;
+}
+
+.inner_container {
+    float: left;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 14px;
+    margin-right: 14px;
+    color: #000000;
+    width: 97%;
+}
+
+.left_container {
+    float: left;
+    width: 40%;
+}
+
+.right_container {
+    float: left;
+    width: 60%;
+}
+
+.more {
+    float: right;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.more a {
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: #1a181d;
+}
+
+.container_top_bottom {
+    float: left;
+    width: 240px;
+    height: 90px;
+    background: #6d7b57;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+
+}
+
+.reset_pwd {
+    float: left;
+    margin-right: 10px;
+}
+
+.update_pwd {
+    float: left;
+
+}
+
+.link_button {
+    float: left;
+    font-size: 13px;
+    height: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-decoration: none;
+    padding-right: 20px;
+    border-radius: 7px;
+    background: #3fa2c3;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, .5) inset, 1px -1px 1px #1a1f32 inset;
+}
+
+.container_center {
+    float: left;
+    width: 871px;
+    height: 320px;
+    margin-top: 7px;
+    margin-left: 13px;
+
+}
+
+.container_center_left {
+    float: left;
+    width: 125px;
+    height: 210px;
+    background: #f5f5f7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+.container_center_center {
+    float: left;
+    width: 125px;
+    height: 210px;
+    background: #f5f5f7;
+    margin-left: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+.container_center_right {
+    float: right;
+    width: 125px;
+    height: 210px;
+    background: #f5f5f7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.container_center_img {
+    width: 120px;
+    height: 120px;
+    background: #50574b;
+    border: 0px solid #18171d;
+}
+
+.center_title {
+    float: left;
+    margin: 7px;
+    padding-left: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #29272e;
+
+}
+
+.center_text {
+    float: left;
+    color: #000000;
+    padding-left: 13px;
+    padding-right: 12px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.container_bottom {
+    float: left;
+    width: 100%;
+    height: 165px;
+    margin-top: 7px;
+    background: #404325;
+}
+
+.bottom_container {
+    float: left;
+    width: 327px;
+    height: 163px;
+
+}
+
+.bottom_title {
+    float: left;
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 95%;
+    color: white;
+    background-color: #3FA2C3;
+    border-radius: 3px;
+}
+
+.bottom_container ul {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+
+}
+
+.bottom_container ul li {
+    color: white;
+    margin-left: 25px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.bottom_container ul li a {
+    font-size: 11px;
+}
+
+.bottom_container ul li a:hover {
+    background-color: #3FA2C3;
+}
+
+.bottom_container a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer {
+    float: left;
+    margin-top: 7px;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    background-color: #3fa2c2;
+    border-top: 3px solid white;
+}
+
+.footer_left {
+    float: left;
+    padding: 8px;
+    color: #ffffff;
+
+}
+
+.footer_right {
+    float: right;
+    padding: 8px;
+    color: #ffffff;
+
+}
+
+.field_with_errors {
+    color: #ff0000;
+    display: table;
+    float: left;
+}
+
+.field_with_errors input {
+    border: 2px solid #ff0000;
+}
+
+.action {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.tweet_button {
+
+    background-image: url(/images/tweet-it-button.jpg);
+    font-weight: bolder;
+    color: #3596D8;
+}
+
+.important {
+
+    color: #ff0000;
+}
+
+.odd {
+    background-color: #c1cfd1;
+}
+
+.even {
+    background-color: #add8e6;
+}
+
+.listing_table {
+    border: 1px solid #18171d;
+
+}
+
+.listing_table th {
+    border-bottom: 1px solid #733b3c;
+    background-color: #666666;
+    text-align: left;
+    color: #ffffff;
+    height: 35px;
+    padding-left: 5px;
+
+}
+
+.listing_table td {
+    border-top: 1px solid #733b3c;
+    text-align: left;
+    padding-left: 5px;
+    height: 25px;
+}
+
+.listing_table td a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.listing_table td a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.paginate {
+    float: right;
+    color: #ff0000;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 20px;
+
+}
+
+.top_header {
+    float: left;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    background-color: #3fa2c2;
+}
+
+.top_header_content {
+    float: left;
+    color: #ffffff;
+}
+
+.tweet_block {
+
+    width: 50%;
+}
+
+.tweet_block:hover {
+    background-color: darkgray;
+}
+
+.tweet_title {
+    float: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #16A765;
+    color: white;
+    height: 27px;
+    line-height: 26px;
+    margin-top: 8px;
+    width: 300px;
+    padding-left: 5px;
+}
+
+.tweetMessageContainer {
+    background-color: #666666;
+    color: #ffffff;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+.messageBody {
+    padding: 3px;
+}

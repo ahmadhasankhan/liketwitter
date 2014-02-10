@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @address.type %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @address.user_id %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @address.country_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @address.state_id %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @address.city_id %>
+</p>
+
+<p>
+  <b>Line one:</b>
+  <%= @address.line_one %>
+</p>
+
+<p>
+  <b>Line two:</b>
+  <%= @address.line_two %>
+</p>
+
+<p>
+  <b>Line three:</b>
+  <%= @address.line_three %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%= @address.zip_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path, :class => 'link_button'%>

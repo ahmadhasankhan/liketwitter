@@ -1,0 +1,65 @@
+<html>
+<body>
+<div style='width: 650px;background: #fff;font-family: Arial;margin:0 auto;'>
+    <table style='border:0;width: 100%'>
+        <tr>
+            <td>
+                <img src="#"></td>
+            <td style='vertical-align: bottom;text-align: right'>
+                <img src="http://#{Settings.mail.host}/images/mailer/transmitUniverseTxt.png"/></td>
+        </tr>
+        <tr style='height: 20px;'></tr>
+    </table>
+    <table style="margin-bottom:10px;padding: 6px 10px 6px 20px;border:0;height:43px;width: 100%;background:
+            url('http://#{Settings.mail.host}/images/mailer/notification_panel.png') repeat-x #7666A4;">
+        <tr>
+            <td style='vertical-align: middle; color: #fff'>
+                <img src="http://#{Settings.mail.host}/images/mailer/notificationTxt.png"></td>
+        </tr>
+    </table>
+    <table style='margin-left: 2%; width:96%'>
+        <tr>
+            <td style='font-size:12px; color:#8a8788;height:40px;'>
+                Greetings<%= @user.username if !@user.nil? %></td>
+            <td align="right" style='font-size:12px;color:#8a8788;'>
+                <%= link_to "Go to my account", "http://#Settings.mail.host}/login" %>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 style='font-size:12px; color:#8a8788;'><%= yield %></td>
+        </tr>
+
+
+    </table>
+    <table style="margin-top:10px;padding: 10px 10px 10px 20px;border:1px;height:43px; width:
+            100%;background:
+            #7666A4;">
+        <tr>
+            <td style="font-size:10px;color: #8EE3FF;"> This e-mail was auto generated. Please do not respond.
+            </td>
+            <td style="text-align: right;font-size: 11px">
+                <%= link_to "Contact Us", "#", :style => 'color: #A8DB40; text-decoration: none;' %>
+                &nbsp; &nbsp;
+                <%= link_to "Privacy Policies", "#", :style => 'color: #A8DB40; text-decoration: none;' %>
+                &nbsp; &nbsp;
+                <%= link_to "Terms & Conditions", "#", :style => 'color: #A8DB40;
+                        text-decoration: none;' %>
+                &nbsp; &nbsp;
+                <%= link_to "Opt Out", "#", :style => 'color: #A8DB40; text-decoration: none;' %>
+            </td>
+    </table>
+    <table style='border:0;width: 100%;margin-left:10px;padding:0 10px;'>
+        <tr>
+            <td style='font-size: 9px;color: #888'>
+                &copy;2012
+                = Settings.app_name
+                All Rights Reserved @ India Tech Dreams.
+            </td>
+            <td style='font-size: 9px;color: #888;text-align: right'>
+                This is a testing mail.
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

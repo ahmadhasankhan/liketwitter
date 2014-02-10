@@ -1,0 +1,57 @@
+<%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@user.errors.count, "page") %> prohibited this user from being saved:</h2>
+            <ul>
+                <% @user.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <table width="80%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td> <%= f.label :username %></td>
+            <td>  <%= f.text_field :username, :required => true, :class => 'inputbox_form' %></td>
+        </tr>
+        <tr>
+            <td width="30%"> <%= f.label :first_name %></td>
+            <td> <%= f.text_field :first_name, :required => true, :class => 'inputbox_form' %> </td>
+        </tr>
+        <tr>
+            <td width="30%"> <%= f.label :last_name %></td>
+            <td> <%= f.text_field :last_name, :required => true, :class => 'inputbox_form' %> </td>
+        </tr>
+        <tr>
+            <td width="30%"> <%= f.label :gender %></td>
+            <td height="30px">&emsp;&emsp; Male <%= f.radio_button :gender, :Male, :checked => true %>
+                Female<%= f.radio_button :gender, :Female %>
+            </td>
+
+        </tr>
+        <tr>
+            <td> <%= f.label :email %></td>
+            <td>  <%= f.email_field :email, :required => true, :class => 'inputbox_form' %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :password %></td>
+            <td> <%= f.password_field :password, :required => true, :class => 'inputbox_form' %></td>
+        </tr>
+        <tr>
+            <td><%= f.label :confirm_password %></td>
+            <td>  <%= f.password_field :password_confirmation, :required => true, :class => 'inputbox_form' %></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><%= f.submit 'Submit', :class => 'link_button' %><%= link_to 'Back', users_path, :class => 'link_button' %></td>
+        </tr>
+    </table>
+
+
+
+
+<% end %>
+
+
+

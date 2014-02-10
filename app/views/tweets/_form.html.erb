@@ -1,0 +1,36 @@
+<%= form_for(@tweet || @tweet = Tweet.new) do |f| %>
+    <% if @tweet.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
+            <ul>
+                <% @tweet.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+    <table width="80%" cellpadding="0" cellspacing="0">
+        <%= f.hidden_field :user_id, :value => current_user.id %>
+        <tr>
+            <td id="message"> <%= f.text_area :message, :required => true, :class => 'textbox_form', :onkeyup => "textCounter(this,'counter',160)" %>
+                <label style="float: right"><%= f.check_box :is_private, :valaue => true %> Private
+                    <input disabled maxlength="3" size="2" value="160" id="counter"><%= f.submit 'Tweet', :class => 'tweet_button' %>
+                </label>
+
+
+            </td>
+        </tr>
+    </table>
+<% end %>
+<script type="text/javascript">
+    function textCounter(field, field2, maxlimit) {
+        var countfield = document.getElementById(field2);
+        if (field.value.length > maxlimit) {
+            field.value = field.value.substring(0, maxlimit);
+            return false;
+        } else {
+            countfield.value = maxlimit - field.value.length;
+        }
+    }
+
+</script>
